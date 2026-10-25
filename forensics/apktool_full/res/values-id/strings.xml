@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="starboard_account_auth_error">Otorisasi akun gagal.</string>
+    <string name="starboard_account_picker_error">Akun tidak tersedia.</string>
+    <string name="starboard_accounts_permission">Log in memerlukan izin Kontak yang diberikan di pengaturan sistem.</string>
+    <string name="starboard_missing_account">"Akun tidak tersedia:
+%1$s"</string>
+    <string name="starboard_platform_connection_error">Tidak dapat tersambung sekarang</string>
+    <string name="starboard_platform_network_settings">Buka pengaturan jaringan</string>
+    <string name="starboard_platform_retry">Coba lagi</string>
+</resources>

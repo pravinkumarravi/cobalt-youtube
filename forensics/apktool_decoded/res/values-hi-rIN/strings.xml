@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="starboard_account_auth_error">अकाउंट का प्रमाणीकरण नहीं हो पाया.</string>
+    <string name="starboard_account_picker_error">अकाउंट उपलब्ध नहीं है.</string>
+    <string name="starboard_accounts_permission">साइन इन करने के लिए सिस्टम की सेटिंग में जाकर कॉन्टैक्ट की अनुमति देनी होगी.</string>
+    <string name="starboard_missing_account">"अकाउंट उपलब्ध नहीं है:
+%1$s"</string>
+    <string name="starboard_platform_connection_error">अभी कनेक्ट नहीं हो सका</string>
+    <string name="starboard_platform_network_settings">नेटवर्क की सेटिंग खोलें</string>
+    <string name="starboard_platform_retry">फिर से कोशिश करें</string>
+</resources>

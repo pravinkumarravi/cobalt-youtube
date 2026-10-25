@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="starboard_account_auth_error">Error de autorización de la cuenta.</string>
+    <string name="starboard_account_picker_error">La cuenta no está disponible.</string>
+    <string name="starboard_accounts_permission">Para iniciar sesión, es necesario conceder permiso de contactos en la configuración del sistema.</string>
+    <string name="starboard_missing_account">"Cuenta no disponible:
+%1$s"</string>
+    <string name="starboard_platform_connection_error">No fue posible establecer la conexión en este momento</string>
+    <string name="starboard_platform_network_settings">Abrir configuración de red</string>
+    <string name="starboard_platform_retry">Volver a intentar</string>
+</resources>

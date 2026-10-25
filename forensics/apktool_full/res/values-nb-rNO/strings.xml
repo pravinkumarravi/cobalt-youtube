@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="starboard_account_auth_error">Kontobekreftelse mislyktes.</string>
+    <string name="starboard_account_picker_error">Konto ikke tilgjengelig.</string>
+    <string name="starboard_accounts_permission">Pålogging krever at du gir kontakttillatelse i systeminnstillingene.</string>
+    <string name="starboard_missing_account">"Konto ikke tilgjengelig:
+%1$s"</string>
+    <string name="starboard_platform_connection_error">Kan ikke koble til akkurat nå</string>
+    <string name="starboard_platform_network_settings">Åpne nettverksinnstillinger</string>
+    <string name="starboard_platform_retry">Prøv på nytt</string>
+</resources>

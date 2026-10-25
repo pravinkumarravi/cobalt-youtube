@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="starboard_account_auth_error">Account authorisation failed.</string>
+    <string name="starboard_account_picker_error">Account not available.</string>
+    <string name="starboard_accounts_permission">Sign in requires Contacts permission to be granted in System settings.</string>
+    <string name="starboard_missing_account">"Account not available:
+%1$s"</string>
+    <string name="starboard_platform_connection_error">"Can't connect right now"</string>
+    <string name="starboard_platform_network_settings">Open network settings</string>
+    <string name="starboard_platform_retry">Try again</string>
+</resources>

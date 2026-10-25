@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="starboard_account_auth_error">Nabigo ang pahintulot ng account.</string>
+    <string name="starboard_account_picker_error">Hindi available ang account.</string>
+    <string name="starboard_accounts_permission">Nangangailangan ang pag-sign in ng pahintulot sa Mga Contact na iga-grant sa mga setting ng system.</string>
+    <string name="starboard_missing_account">"Hindi available ang account:
+%1$s"</string>
+    <string name="starboard_platform_connection_error">Hindi makakonekta sa ngayon</string>
+    <string name="starboard_platform_network_settings">Buksan ang mga setting ng network</string>
+    <string name="starboard_platform_retry">Subukan ulit</string>
+</resources>

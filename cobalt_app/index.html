@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, height=1080, initial-scale=1.0, user-scalable=no">
+  <title>YouTube TV (Cobalt)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cobalt-env">
+  <!-- SCREEN 0: Profile Picker ("Who's watching?") -->
+  <div id="screen-profile" class="screen active">
+    <div class="sidebar expanded">
+      <div class="user-pill focusable" data-nav-down="#profile-search">
+        <div class="avatar-sm">P</div>
+        <span class="user-name">PRAVIN KUMAR R</span>
+      </div>
+      <div class="nav-list">
+        <div class="nav-item focusable" id="profile-search" data-action="search">
+          <span class="icon">🔍</span><span class="label">Search</span>
+        </div>
+        <div class="nav-item focusable active" data-action="home">
+          <span class="icon">🏠</span><span class="label">Home</span>
+        </div>
+        <div class="nav-item focusable" data-action="shorts">
+          <span class="icon">⚡</span><span class="label">Shorts</span>
+        </div>
+        <div class="nav-item focusable" data-action="subs">
+          <span class="icon">📺</span><span class="label">Subscriptions</span>
+        </div>
+        <div class="nav-item focusable" data-action="library">
+          <span class="icon">📂</span><span class="label">Library</span>
+        </div>
+        <div class="nav-divider"></div>
+        <div class="nav-item focusable"><span class="icon">📰</span><span class="label">News</span></div>
+        <div class="nav-item focusable"><span class="icon">🎮</span><span class="label">Gaming</span></div>
+        <div class="nav-item focusable"><span class="icon">📡</span><span class="label">Live</span></div>
+        <div class="nav-item focusable"><span class="icon">🎵</span><span class="label">Music</span></div>
+        <div class="nav-item focusable"><span class="icon">🎙️</span><span class="label">Podcasts</span></div>
+        <div class="nav-item focusable"><span class="icon">🏆</span><span class="label">Sport</span></div>
+        <div class="nav-item focusable" style="margin-top: auto;"><span class="icon">⚙️</span><span class="label">Settings</span></div>
+      </div>
+    </div>
+
+    <div class="profile-main-content">
+      <h1 class="profile-title">Who's watching?</h1>
+      <div class="profiles-row">
+        <div class="profile-card focusable initial-focus" id="prof-1" data-profile="Pravin">
+          <div class="profile-circle avatar-1">
+            <span class="profile-initial">P</span>
+          </div>
+          <div class="profile-name">PRAVIN KUMAR R</div>
+        </div>
+        <div class="profile-card focusable" id="prof-2" data-profile="Ramya">
+          <div class="profile-circle avatar-2">
+            <span class="profile-initial">R</span>
+          </div>
+          <div class="profile-name">Ramya v</div>
+        </div>
+        <div class="profile-card focusable" id="prof-3">
+          <div class="profile-circle add-circle">
+            <span class="plus-icon">+</span>
+          </div>
+          <div class="profile-name">Add account</div>
+        </div>
+        <div class="profile-card focusable" id="prof-4">
+          <div class="profile-circle add-circle">
+            <span class="plus-icon">+</span>
+          </div>
+          <div class="profile-name">Add a child account</div>
+        </div>
+      </div>
+
+      <div class="guest-btn-container">
+        <button class="guest-btn focusable" id="btn-guest">Watch as guest</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 1: Home Feed -->
+  <div id="screen-home" class="screen">
+    <!-- Collapsible Sidebar -->
+    <div class="sidebar collapsed" id="home-sidebar">
+      <div class="avatar-circle-sm focusable" data-action="profile">P</div>
+      <div class="nav-icons">
+        <div class="icon-btn focusable" data-action="search" title="Search">🔍</div>
+        <div class="icon-btn focusable active" data-action="home" title="Home">🏠</div>
+        <div class="icon-btn focusable" title="Shorts">⚡</div>
+        <div class="icon-btn focusable" title="Subscriptions">📺</div>
+        <div class="icon-btn focusable" title="Library">📂</div>
+        <div class="icon-btn focusable" title="News">📰</div>
+        <div class="icon-btn focusable" title="Gaming">🎮</div>
+        <div class="icon-btn focusable" title="Live">📡</div>
+        <div class="icon-btn focusable" title="Music">🎵</div>
+        <div class="icon-btn focusable settings-bottom" title="Settings">⚙️</div>
+      </div>
+    </div>
+
+    <!-- Home Main Feed Area -->
+    <div class="home-content">
+      <!-- Top Header -->
+      <div class="top-header">
+        <div class="search-pill focusable" id="home-search-pill" data-action="search">
+          <span class="search-icon">🔍</span>
+          <span class="search-placeholder">Search</span>
+        </div>
+        <div class="yt-logo">
+          <div class="red-lozenge">▶</div>
+          <span class="yt-text">YouTube</span>
+        </div>
+      </div>
+
+      <!-- Feed Container -->
+      <div class="feed-scroll-container" id="feed-scroll">
+        <!-- Hero Featured Banner -->
+        <div class="hero-banner">
+          <div class="hero-info">
+            <div class="hero-channel">
+              <div class="channel-icon">💎</div>
+              <span class="channel-name">Heera Hai Sada Ke Liye</span>
+            </div>
+            <h2 class="hero-title">Love From Hubby</h2>
+            <p class="hero-subtitle">Sponsored • A natural diamond solitaire holds memories that last forever.</p>
+            <div class="hero-actions">
+              <button class="watch-pill-btn focusable" id="hero-watch-btn" data-video="hero">Watch</button>
+              <button class="more-menu-btn focusable">⋮</button>
+            </div>
+          </div>
+          <div class="hero-preview">
+            <div class="trailer-badge">🎬 Trailer Preview</div>
+          </div>
+        </div>
+
+        <!-- Shelf 1: Recommended -->
+        <div class="shelf-section">
+          <h3 class="shelf-title">Recommended</h3>
+          <div class="shelf-row">
+            <div class="video-card focusable" data-video="v1">
+              <div class="thumbnail-wrapper grad-1">
+                <span class="duration-badge">46:15</span>
+                <div class="watch-progress" style="width: 82%;"></div>
+              </div>
+              <div class="card-details">
+                <h4 class="card-title">I Built an Engine From Scratch</h4>
+                <div class="card-channel">Design to Steel</div>
+                <div class="card-meta">5.8 lakh views • 2 months ago</div>
+              </div>
+            </div>
+
+            <div class="video-card focusable" data-video="v2">
+              <div class="thumbnail-wrapper grad-2">
+                <span class="duration-badge">3:09:52</span>
+              </div>
+              <div class="card-details">
+                <h4 class="card-title">A Modern Science Genius Reborn as a Farmer, Using Technology</h4>
+                <div class="card-channel">Heroic Tales Drama</div>
+                <div class="card-meta">70K views • 1 month ago</div>
+              </div>
+            </div>
+
+            <div class="video-card focusable" data-video="v3">
+              <div class="thumbnail-wrapper grad-3">
+                <span class="duration-badge">14:48</span>
+                <div class="watch-progress" style="width: 40%;"></div>
+              </div>
+              <div class="card-details">
+                <h4 class="card-title">Why 3D Games Look Better Than Ever</h4>
+                <div class="card-channel">Coding Quests</div>
+                <div class="card-meta">1 lakh views • 1 day ago</div>
+              </div>
+            </div>
+
+            <div class="video-card focusable" data-video="v4">
+              <div class="thumbnail-wrapper grad-4">
+                <span class="duration-badge">22:15</span>
+              </div>
+              <div class="card-details">
+                <h4 class="card-title">Inside an Advanced Automation Factory</h4>
+                <div class="card-channel">Tech Insights</div>
+                <div class="card-meta">2.4 lakh views • 3 weeks ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shelf 2: Recently Uploaded -->
+        <div class="shelf-section">
+          <h3 class="shelf-title">Recently uploaded</h3>
+          <div class="shelf-row">
+            <div class="video-card focusable" data-video="v5">
+              <div class="thumbnail-wrapper grad-5">
+                <span class="duration-badge">4:50</span>
+                <div class="watch-progress" style="width: 50%;"></div>
+              </div>
+              <div class="card-details">
+                <h4 class="card-title">Switching from Fusion 360 to SolidCraft?</h4>
+                <div class="card-channel">SolidCraft Tutorial and 2 more</div>
+                <div class="card-meta">45K views • 2 days ago</div>
+              </div>
+            </div>
+
+            <div class="video-card focusable" data-video="v6">
+              <div class="thumbnail-wrapper grad-6">
+                <span class="duration-badge">5:12</span>
+              </div>
+              <div class="card-details">
+                <h4 class="card-title">SolidCraft Beginner Tutorial #5 | How to Use Shell in SolidCraft</h4>
+                <div class="card-channel">SolidCraft Tutorial and 2 more</div>
+                <div class="card-meta">18K views • 3 days ago</div>
+              </div>
+            </div>
+
+            <div class="video-card focusable" data-video="v7">
+              <div class="thumbnail-wrapper grad-7">
+                <span class="duration-badge">14:48</span>
+              </div>
+              <div class="card-details">
+                <h4 class="card-title">Research based | 200 Cr Micro to 1Lakh Crs LargeCap</h4>
+                <div class="card-channel">Madurai Veeran Money Coach</div>
+                <div class="card-meta">14K views • 4 hours ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 2: TV Search with 7x4 Alphabet Keyboard -->
+  <div id="screen-search" class="screen">
+    <div class="sidebar collapsed">
+      <div class="avatar-circle-sm focusable" data-action="profile">P</div>
+      <div class="nav-icons">
+        <div class="icon-btn focusable active" data-action="search">🔍</div>
+        <div class="icon-btn focusable" data-action="home">🏠</div>
+        <div class="icon-btn focusable">⚡</div>
+        <div class="icon-btn focusable">📺</div>
+        <div class="icon-btn focusable">📂</div>
+        <div class="icon-btn focusable settings-bottom">⚙️</div>
+      </div>
+    </div>
+
+    <div class="search-main-content">
+      <!-- Search Top Bar -->
+      <div class="search-top-bar">
+        <div class="search-active-pill">
+          <span class="search-icon">🔍</span>
+          <span id="search-query-display" class="search-text-input">Search</span>
+        </div>
+        <div class="yt-logo">
+          <div class="red-lozenge">▶</div>
+          <span class="yt-text">YouTube</span>
+        </div>
+      </div>
+
+      <!-- Search Middle: Suggestions + Keyboard -->
+      <div class="search-body">
+        <!-- Left: Trending Suggestions -->
+        <div class="search-suggestions" id="suggestions-container">
+          <div class="suggestion-item focusable focused" data-query="psg vs barcelona">
+            <span class="flame">🔥</span> <span class="sug-text">psg vs barcelona</span>
+          </div>
+          <div class="suggestion-item focusable" data-query="lakers vs warriors">
+            <span class="flame">🔥</span> <span class="sug-text">lakers vs warriors</span>
+          </div>
+          <div class="suggestion-item focusable" data-query="john anderson">
+            <span class="flame">🔥</span> <span class="sug-text">john anderson</span>
+          </div>
+          <div class="suggestion-item focusable" data-query="brooklyn and bailey">
+            <span class="flame">🔥</span> <span class="sug-text">brooklyn and bailey</span>
+          </div>
+          <div class="suggestion-item focusable" data-query="tornillo">
+            <span class="flame">🔥</span> <span class="sug-text">tornillo</span>
+          </div>
+        </div>
+
+        <!-- Right: 7x4 Virtual Alphabet Grid -->
+        <div class="virtual-keyboard" id="tv-keyboard">
+          <div class="kb-row">
+            <button class="key focusable" data-key="A">A</button>
+            <button class="key focusable" data-key="B">B</button>
+            <button class="key focusable" data-key="C">C</button>
+            <button class="key focusable" data-key="D">D</button>
+            <button class="key focusable" data-key="E">E</button>
+            <button class="key focusable" data-key="F">F</button>
+            <button class="key focusable" data-key="G">G</button>
+            <button class="key focusable action-key" data-key="BACKSPACE">⌫</button>
+          </div>
+          <div class="kb-row">
+            <button class="key focusable" data-key="H">H</button>
+            <button class="key focusable" data-key="I">I</button>
+            <button class="key focusable" data-key="J">J</button>
+            <button class="key focusable" data-key="K">K</button>
+            <button class="key focusable" data-key="L">L</button>
+            <button class="key focusable" data-key="M">M</button>
+            <button class="key focusable" data-key="N">N</button>
+            <button class="key focusable action-key" data-key="NUM">&123</button>
+          </div>
+          <div class="kb-row">
+            <button class="key focusable" data-key="O">O</button>
+            <button class="key focusable" data-key="P">P</button>
+            <button class="key focusable" data-key="Q">Q</button>
+            <button class="key focusable" data-key="R">R</button>
+            <button class="key focusable" data-key="S">S</button>
+            <button class="key focusable" data-key="T">T</button>
+            <button class="key focusable" data-key="U">U</button>
+            <button class="key focusable action-key" data-key="LANG">🌐</button>
+          </div>
+          <div class="kb-row">
+            <button class="key focusable" data-key="V">V</button>
+            <button class="key focusable" data-key="W">W</button>
+            <button class="key focusable" data-key="X">X</button>
+            <button class="key focusable" data-key="Y">Y</button>
+            <button class="key focusable" data-key="Z">Z</button>
+            <button class="key focusable" data-key="-">-</button>
+            <button class="key focusable" data-key="'">'</button>
+          </div>
+          <div class="kb-row kb-actions">
+            <button class="key focusable wide-key" data-key="SPACE">SPACE</button>
+            <button class="key focusable wide-key" data-key="CLEAR">CLEAR</button>
+            <button class="key focusable wide-key primary-key" data-key="SEARCH">SEARCH</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Bottom Shelf -->
+      <div class="search-shelf-section">
+        <h3 class="shelf-title">From recommended searches</h3>
+        <div class="shelf-row">
+          <div class="video-card focusable" data-video="v5">
+            <div class="thumbnail-wrapper grad-5"><span class="duration-badge">4:50</span></div>
+            <div class="card-details">
+              <h4 class="card-title">Switching from Fusion 360 to SolidCraft?</h4>
+              <div class="card-channel">SolidCraft Tutorial and 2 more</div>
+            </div>
+          </div>
+          <div class="video-card focusable" data-video="v6">
+            <div class="thumbnail-wrapper grad-6"><span class="duration-badge">5:12</span></div>
+            <div class="card-details">
+              <h4 class="card-title">SolidCraft Beginner Tutorial #5 | Shell</h4>
+              <div class="card-channel">SolidCraft Tutorial</div>
+            </div>
+          </div>
+          <div class="video-card focusable" data-video="v7">
+            <div class="thumbnail-wrapper grad-7"><span class="duration-badge">14:48</span></div>
+            <div class="card-details">
+              <h4 class="card-title">Research based | 200 Cr to 1 Lakh Cr</h4>
+              <div class="card-channel">Madurai Veeran Money Coach</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 3: Video Player & OSD Controls -->
+  <div id="screen-player" class="screen">
+    <!-- Full-screen Video Element / Background Canvas -->
+    <div class="video-viewport">
+      <div class="video-bg-animation">
+        <div class="video-title-watermark" id="player-watermark">I Built an Engine From Scratch</div>
+      </div>
+    </div>
+
+    <!-- Player OSD Overlay -->
+    <div class="player-osd active" id="player-osd">
+      <!-- Top Left Title and Metadata -->
+      <div class="player-top-header">
+        <h2 class="player-video-title" id="player-title">I Built an Engine From Scratch</h2>
+        <div class="player-video-meta" id="player-meta">Design to Steel • 5.8 lakh views • 2 mo ago</div>
+        <div class="mute-indicator">🔇</div>
+      </div>
+
+      <!-- Center / Bottom Controls Area -->
+      <div class="player-bottom-controls">
+        <!-- Scrubber and Chapter Info -->
+        <div class="scrubber-header">
+          <span class="chapter-label" id="player-chapter">37:26 • Final engine assembly</span>
+          <span class="total-duration" id="player-duration">46:14</span>
+        </div>
+
+        <div class="segmented-scrubber">
+          <div class="segment played" style="flex: 3;"></div>
+          <div class="segment gap"></div>
+          <div class="segment played" style="flex: 8;"></div>
+          <div class="segment gap"></div>
+          <div class="segment played" style="flex: 6;">
+            <div class="playhead-marker"></div>
+          </div>
+          <div class="segment gap"></div>
+          <div class="segment remaining" style="flex: 9;"></div>
+          <div class="segment gap"></div>
+          <div class="segment remaining" style="flex: 6;"></div>
+          <div class="segment gap"></div>
+          <div class="segment remaining" style="flex: 4;"></div>
+        </div>
+
+        <!-- 12-Button Control Row -->
+        <div class="control-row">
+          <!-- Left side pills -->
+          <div class="channel-badge focusable">⚙️</div>
+          <button class="pill-btn focusable">Description</button>
+          <button class="pill-btn focusable">Subscribe</button>
+
+          <div class="spacer"></div>
+
+          <!-- Playback Cluster -->
+          <button class="circle-btn focusable" id="btn-prev-chap" title="Previous chapter">⏮</button>
+          <button class="circle-play-btn focusable focused" id="btn-play-pause" title="Play/Pause">
+            <span class="play-icon">⏸</span>
+          </button>
+          <button class="circle-btn focusable" id="btn-next-chap" title="Next chapter">⏭</button>
+
+          <div class="spacer"></div>
+
+          <!-- Action Icons -->
+          <button class="circle-btn focusable" title="Like">👍</button>
+          <button class="circle-btn focusable" title="Dislike">👎</button>
+          <button class="circle-btn focusable" title="Comments">💬</button>
+          <button class="circle-btn focusable" title="AI Summary">✨</button>
+          <button class="circle-btn focusable" title="Save">🔖</button>
+          <button class="circle-btn focusable" title="Captions">CC</button>
+          <button class="circle-btn focusable" title="Settings">⚙️</button>
+        </div>
+
+        <!-- Peeking Related Videos Shelf -->
+        <div class="player-peek-shelf">
+          <div class="peek-card focusable">
+            <div class="peek-thumb grad-1"></div>
+          </div>
+          <div class="peek-card focusable">
+            <div class="peek-thumb grad-2"></div>
+          </div>
+          <div class="peek-card focusable">
+            <div class="peek-thumb grad-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

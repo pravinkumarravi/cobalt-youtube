@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<whisperplay>
+    <dial>
+        <application>
+            <dialid>YouTube</dialid>
+            <startAction>android.intent.action.MAIN</startAction>
+            <stopAction>com.amazon.firetv.youtube.STOP_ACTION</stopAction>
+            <authorizedDomain>.youtube.com</authorizedDomain>
+            <authorizedOrigins>
+                <origin>https://*.youtube.com</origin>
+                <origin>package:*</origin>
+            </authorizedOrigins>
+        </application>
+    </dial>
+</whisperplay>

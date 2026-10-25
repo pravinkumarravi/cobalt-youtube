@@ -1,0 +1,17 @@
+# Gradle & Android Studio build outputs
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Intermediate signature and temporary files
+*.idsig
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db

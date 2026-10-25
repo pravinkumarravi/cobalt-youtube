@@ -1,0 +1,97 @@
+[
+  {
+    "window-title": "YouTube",
+    "type": "APPLICATION",
+    "active": true,
+    "focused": true,
+    "layer": 0,
+    "bounds": "[0,0][1920,1080]",
+    "content": [
+      {
+        "class": "android.view.View",
+        "interactions": [
+          "FOCUSABLE"
+        ],
+        "state": [
+          "FOCUSED"
+        ],
+        "bounds": "[998,216][1782,657]",
+        "center": "[1390,436]",
+        "children": [
+          {
+            "class": "android.view.View",
+            "interactions": [
+              "FOCUSABLE"
+            ],
+            "bounds": "[998,216][1008,226]",
+            "center": "[1003,221]"
+          },
+          {
+            "class": "android.view.View",
+            "interactions": [
+              "FOCUSABLE"
+            ],
+            "bounds": "[1008,216][1018,226]",
+            "center": "[1013,221]"
+          },
+          {
+            "class": "android.view.View",
+            "interactions": [
+              "FOCUSABLE"
+            ],
+            "bounds": "[1018,216][1028,226]",
+            "center": "[1023,221]"
+          },
+          {
+            "class": "android.view.View",
+            "interactions": [
+              "FOCUSABLE"
+            ],
+            "bounds": "[998,226][1008,236]",
+            "center": "[1003,231]"
+          },
+          {
+            "class": "android.view.View",
+            "interactions": [
+              "FOCUSABLE"
+            ],
+            "bounds": "[1008,226][1018,236]",
+            "center": "[1013,231]"
+          },
+          {
+            "class": "android.view.View",
+            "interactions": [
+              "FOCUSABLE"
+            ],
+            "bounds": "[1018,226][1028,236]",
+            "center": "[1023,231]"
+          },
+          {
+            "class": "android.view.View",
+            "interactions": [
+              "FOCUSABLE"
+            ],
+            "bounds": "[998,236][1008,246]",
+            "center": "[1003,241]"
+          },
+          {
+            "class": "android.view.View",
+            "interactions": [
+              "FOCUSABLE"
+            ],
+            "bounds": "[1008,236][1018,246]",
+            "center": "[1013,241]"
+          },
+          {
+            "class": "android.view.View",
+            "interactions": [
+              "FOCUSABLE"
+            ],
+            "bounds": "[1018,236][1028,246]",
+            "center": "[1023,241]"
+          }
+        ]
+      }
+    ]
+  }
+]
